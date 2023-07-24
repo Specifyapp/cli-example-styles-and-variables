@@ -1,0 +1,41 @@
+{
+  "repository": "SPECIFY_REPOSITORY_WITH_STYLES",
+  "personalAccessToken": "SPECIFY_PERSONAL_ACCESS_TOKEN",
+  "rules": [
+    {
+      "name": "Colors / With Styles",
+      "path": "output/colors/with-styles.css",
+      "filter": { "types": ["color"] },
+      "parsers": [
+        { "name": "kebabcasify", "options": { "keys": ["name"] } },
+        { "name": "sort-by", "options": { "keys": ["name"] } },
+        {
+          "name": "to-css-custom-properties",
+          "options": {
+            "formatConfig": { "selector": ":root[data-theme='default']" },
+            "formatTokens": { "color": "hsl" }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TextStyles / With Styles",
+      "path": "output/texts/text-styles.css",
+      "filter": { "types": ["textStyle"] },
+      "parsers": [
+        { "name": "kebabcasify", "options": { "keys": ["name"] } },
+        { "name": "sort-by", "options": { "keys": ["name"] } },
+        { "name": "px-to-rem", "options": { "keys": ["fontSize", "letterSpacing"] } },
+        {
+          "name": "to-css-text-style",
+          "options": {
+            "exclude": ["color", "text-indent", "vertical-align", "text-align"],
+            "relativeLineHeight": true,
+            "genericFamily": "serif",
+            "prefix": "text-"
+          }
+        }
+      ]
+    }
+  ]
+}

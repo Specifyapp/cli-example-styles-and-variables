@@ -1,0 +1,50 @@
+.text-body-l {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.text-body-m {
+  font-family: Inter-Medium, serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.text-body-s {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.text-heading-1 {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.text-heading-2 {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+.text-label {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.67;
+  letter-spacing: 0.03125rem;
+  text-transform: uppercase;
+}
+
+.text-subtitle {
+  font-family: Inter-Medium, serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.78;
+}

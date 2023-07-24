@@ -1,0 +1,16 @@
+{
+  "version": "2",
+  "repository": "SPECIFY_REPOSITORY_WITH_VARIABLES",
+  "personalAccessToken": "SPECIFY_PERSONAL_ACCESS_TOKEN",
+  "rules": [
+    {
+      "name": "Colors / With Variables",
+      "parsers": [
+        {
+          "name": "to-css-custom-properties",
+          "output": { "type": "file", "filePath": "output/colors/with-variables.css" }
+        }
+      ]
+    }
+  ]
+}
